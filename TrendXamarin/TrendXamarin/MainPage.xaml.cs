@@ -301,42 +301,56 @@ namespace TrendXamarin
 
         private void HesapBut_Clicked(object sender, EventArgs e)
         {
-           
+            ASayfa.IsVisible = false;
+            Kategori.IsVisible = false;
+            Favori.IsVisible = false;
+            Sepetim.IsVisible = false;
+            Hesabım.IsVisible = true;
         }
 
         private void SatinBasla_Clicked(object sender, EventArgs e)
         {
-           
+            ASayfa.IsVisible = true;
+            Kategori.IsVisible = false;
+            Favori.IsVisible = false;
+            Sepetim.IsVisible = false;
+            Hesabım.IsVisible = false;
         }
 
         private void İndText_Focused(object sender, FocusEventArgs e)
         {
-           
+            İndText.Text = "";
         } 
 
         private void AvvaKat_Clicked(object sender, EventArgs e)
         {
-            
+            Anasayfa.IsVisible = false;
+            ErkekElbise.IsVisible = true;
         }
 
         private void KotonKat_Clicked(object sender, EventArgs e)
         {
-           
+            Anasayfa.IsVisible = false;
+            KadınElbise.IsVisible = true;
         }
 
         private void KategoriKadın_Clicked(object sender, EventArgs e)
         {
-          
+            KadinKat.IsVisible = true;
+            ErkekKat.IsVisible = false;
         }
 
         private void KategoriErkek_Clicked(object sender, EventArgs e)
         {
-           
+            KadinKat.IsVisible = false;
+            ErkekKat.IsVisible = true;
         }
 
         private void OnaylaBut_Clicked(object sender, EventArgs e)
         {
-           
+            Sepetim.IsVisible = false;
+            Ödeme.IsVisible = true;
+            TopFiyat.Text = ToplamPara.Text
         }
 
         private void FavButon_Clicked(object sender, EventArgs e)
