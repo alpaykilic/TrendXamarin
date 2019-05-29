@@ -78,67 +78,80 @@ namespace TrendXamarin
 
         private void Ürün5Buton_Clicked(object sender, EventArgs e)
         {
-           
+            ErkekElbise.IsVisible = false;
+            ÜrünS5.IsVisible = true;
         }
 
         private void Ürün6Buton_Clicked(object sender, EventArgs e)
         {
-           
+            ErkekElbise.IsVisible = false;
+            ÜrünS6.IsVisible = true;
         }
 
         private void Ürün7Buton_Clicked(object sender, EventArgs e)
         {
-            
+            ErkekElbise.IsVisible = false;
+            ÜrünS7.IsVisible = true;
         }
 
         private void Ürün8Buton_Clicked(object sender, EventArgs e)
         {
-           
+            ErkekElbise.IsVisible = false;
+            ÜrünS8.IsVisible = true;
         }
 
         private void SipButon1_Clicked(object sender, EventArgs e)
-        {         
-
+        {
+            para += 39.99;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon4_Clicked(object sender, EventArgs e)
         {
-            
+            ÜrünS2.IsVisible = false;
+            KadınElbise.IsVisible = true;
         }
 
         private void SipButon2_Clicked(object sender, EventArgs e)
         {
-          
+            para += 14.99;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon5_Clicked(object sender, EventArgs e)
         {
-           
+            ÜrünS3.IsVisible = false;
+            KadınElbise.IsVisible = true;
         }
 
         private void SipButon3_Clicked(object sender, EventArgs e)
         {
-          
+            para += 24.99;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon6_Clicked(object sender, EventArgs e)
         {
-           
+            ÜrünS4.IsVisible = false;
+            KadınElbise.IsVisible = true;
         }
 
         private void SipButon4_Clicked(object sender, EventArgs e)
         {
-          
+            para += 79.99;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon7_Clicked(object sender, EventArgs e)
         {
-          
+            ÜrünS5.IsVisible = false;
+            ErkekElbise.IsVisible = true;
         }
 
         private void SipButon5_Clicked(object sender, EventArgs e)
         {
-           
+            para += 49.95;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon8_Clicked(object sender, EventArgs e)
