@@ -12,6 +12,11 @@ namespace TrendXamarin
         public MainPage()
         {
             InitializeComponent();
+            CvvBox.MaxLength = 3;
+            AyBox.MaxLength = 2;
+            YılBox.MaxLength = 4;
+            TcText.MaxLength = 11;
+            KartNo.MaxLength = 16;
         }
 
         private void GeriButon_Clicked(object sender, EventArgs e)
