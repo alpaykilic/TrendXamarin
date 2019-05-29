@@ -876,6 +876,89 @@
                     
                         </StackLayout>
                     </Grid>
+
+                    <Grid Margin="10,15,10,0" HeightRequest="260" BackgroundColor="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="4*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Margin="10,6,0,0" Text="Kart Bilgileri" TextColor="DarkOrange" FontSize="25"/>
+                        <StackLayout Grid.Row="1">
+                            <Label Margin="11,0,-1,0" FontSize="20" Text="Kart No                          Tc No" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Entry x:Name="KartNo" Focused="KartNo_Focused" MaxLength="16" HorizontalOptions="Start" WidthRequest="170" Margin="10,0,0,0" VerticalOptions="Center"/>
+                                <Entry x:Name="TcText" MaxLength="11" HorizontalOptions="Start" WidthRequest="120" VerticalOptions="Center" Grid.Column="1"/>
+
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Margin="13,0,0,0">Son Kullanma Tarihi</Label>
+                                <Label Grid.Column="1">CVV</Label>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Entry x:Name="AyBox" MaxLength="2" Focused="AyBox_Focused" Text="MM" Margin="10,0,0,0" HorizontalOptions="Start" WidthRequest="50" VerticalOptions="Center"/>
+                                <Entry x:Name="YılBox" MaxLength="4" Focused="YılBox_Focused" Text="YYYY" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="50" Grid.Column="1"/>
+                                <Entry x:Name="CvvBox" MaxLength="3" Focused="CvvBox_Focused" HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="2" WidthRequest="50" />
+                                
+                            </Grid>
+
+                        </StackLayout>
+                        
+                    </Grid>
+
+                    <Grid Margin="10,15,10,0" HeightRequest="100" BackgroundColor="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Margin="10,5,0,0" Text="Taksit Seçenekleri" FontSize="20" FontAttributes="Bold" TextColor="DarkOrange" BackgroundColor="White" />
+                        <Label Text="Taksit seçeneklerini görmek için lütfen önce kart bilgilerinizi giriniz." Grid.Row="1" Margin="10,-10,0,0"/>
+
+                    </Grid>
+
+                    <Grid Margin="10,15,10,0" HeightRequest="60" BackgroundColor="Transparent">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Switch Scale="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Ön Bilgilendirme Koşulları'nı ve Mesafeli Satış Sözleşmesi'ni okudum, onaylıyorum." TextColor="Black" Margin="0,15,0,0"/>
+
+                    </Grid>
+
+                    <Grid Margin="10,15,10,0" HeightRequest="50" BackgroundColor="White">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Toplam" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="14"/>
+                        <Label x:Name="TopFiyat" Text="0" VerticalOptions="Center" HorizontalOptions="Start" TextColor="DarkOrange" FontAttributes="Bold" FontSize="14" Grid.Column="1"/>
+                        <Button x:Name="OnayButon" Clicked="OnayButon_Clicked" Text="Onayla ve Bitir" Margin="5" BackgroundColor="DarkOrange" TextColor="White" FontSize="Medium" FontAttributes="Bold" Grid.Column="2"/>
+                        
+
+                    </Grid>
+
                 </StackLayout>
             </ScrollView>
         </Grid>

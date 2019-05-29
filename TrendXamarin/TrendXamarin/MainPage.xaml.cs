@@ -269,5 +269,30 @@ namespace TrendXamarin
         {
 
         }
+
+        private void KartNo_Focused(object sender, FocusEventArgs e)
+        {
+
+        }
+
+        private void AyBox_Focused(object sender, FocusEventArgs e)
+        {
+
+        }
+
+        private void YılBox_Focused(object sender, FocusEventArgs e)
+        {
+
+        }
+
+        private void CvvBox_Focused(object sender, FocusEventArgs e)
+        {
+
+        }
+
+        private void OnayButon_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
