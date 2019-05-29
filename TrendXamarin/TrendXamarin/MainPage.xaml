@@ -843,7 +843,7 @@
 
         </Grid>
 
-        <Grid x:Name="Ödeme" BackgroundColor="LightGray" IsVisible="True">
+        <Grid x:Name="Ödeme" BackgroundColor="LightGray" IsVisible="False">
             <ScrollView>
                 <StackLayout>
                     <Grid HeightRequest="50" BackgroundColor="White">
@@ -961,6 +961,47 @@
 
                 </StackLayout>
             </ScrollView>
+        </Grid>
+
+        <Grid x:Name="Özet" BackgroundColor="White" IsVisible="True">
+            <StackLayout BackgroundColor="LightGray">
+               
+                <Grid HeightRequest="45" BackgroundColor="White">
+                    <Image Source="trendyol.PNG"></Image>
+                </Grid>
+                
+                <Grid HeightRequest="200" Margin="10" BackgroundColor="White">
+                    <Image Source="siparisbasarili.png"/>
+                </Grid>
+
+                <Grid Margin="10" HeightRequest="45">
+                    <Button x:Name="DevamButon" Clicked="DevamButon_Clicked" BackgroundColor="DarkOrange" Text="Alışverişe Devam Et" TextColor="White"/>
+                </Grid>
+
+                <Grid HeightRequest="30" Margin="10" BackgroundColor="White">
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Toplam" FontAttributes="Bold" TextColor="OrangeRed" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Margin="2"/>
+                    <Label x:Name="TopFiyat2" Grid.Column="1" TextColor="Black" Text="0 TL"  VerticalTextAlignment="Center" HorizontalTextAlignment="End" Margin="2"/>
+
+                </Grid>
+
+                <Grid HeightRequest="30" Margin="10">
+                    <Label BackgroundColor="White" HorizontalTextAlignment="Start" FontAttributes="Bold" VerticalTextAlignment="Center" Text="Teslimat Adresi" TextColor="OrangeRed"></Label>
+                </Grid>
+
+                <Grid Margin="10" HeightRequest="150">
+                    <Label x:Name="AdresEntry" TextColor="Black" HeightRequest="149" Margin="12" FontAttributes="Italic" Text="Adres Giriniz" VerticalOptions="Center" HorizontalTextAlignment="Center" BackgroundColor="White"/>
+                </Grid>
+
+            </StackLayout>
         </Grid>
 
     </Grid>

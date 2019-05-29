@@ -294,5 +294,10 @@ namespace TrendXamarin
         {
 
         }
+
+        private void DevamButon_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
