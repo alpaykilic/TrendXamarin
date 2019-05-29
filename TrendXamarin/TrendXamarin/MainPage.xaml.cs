@@ -156,62 +156,89 @@ namespace TrendXamarin
 
         private void GeriButon8_Clicked(object sender, EventArgs e)
         {
-          
+            ÜrünS6.IsVisible = false;
+            ErkekElbise.IsVisible = true;
         }
 
         private void SipButon6_Clicked(object sender, EventArgs e)
         {
-           
+            para += 49.95;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon9_Clicked(object sender, EventArgs e)
         {
-          
+            ÜrünS7.IsVisible = false;
+            ErkekElbise.IsVisible = true;
         }
 
         private void SipButon7_Clicked(object sender, EventArgs e)
         {
-          
+            para += 32.99;
+            ToplamPara.Text = para + " TL";
         }
 
         private void GeriButon10_Clicked(object sender, EventArgs e)
         {
-            
+            ÜrünS8.IsVisible = false;
+            ErkekElbise.IsVisible = true;
         }
 
         private void SipButon8_Clicked(object sender, EventArgs e)
         {
-            
+            para += 47.99;
+            ToplamPara.Text = para + " TL";
         }
 
         private void ÖdButon_Clicked(object sender, EventArgs e)
         {
-            
+            Anasayfa.IsVisible = false;
+            Ödeme.IsVisible = true;
         }
 
         private void KadınKButton_Clicked(object sender, EventArgs e)
         {
-            
+            ErkekKategori.IsVisible = false;
+            KadınKategori.IsVisible = true;
+            ÇocukKategori.IsVisible = false;
+            YaşamKategori.IsVisible = false;
+            HızlıKategori.IsVisible = false;
         }
 
         private void ErkekKButton_Clicked(object sender, EventArgs e)
         {
-            
+            ErkekKategori.IsVisible = true;
+            KadınKategori.IsVisible = false;
+            ÇocukKategori.IsVisible = false;
+            YaşamKategori.IsVisible = false;
+            HızlıKategori.IsVisible = false;
         }
 
         private void ÇocukKButton_Clicked(object sender, EventArgs e)
         {
-           
+            ErkekKategori.IsVisible = false;
+            KadınKategori.IsVisible = false;
+            ÇocukKategori.IsVisible = true;
+            YaşamKategori.IsVisible = false;
+            HızlıKategori.IsVisible = false;
         }
 
         private void YaşamKButton_Clicked(object sender, EventArgs e)
         {
-          
+            ErkekKategori.IsVisible = false;
+            KadınKategori.IsVisible = false;
+            ÇocukKategori.IsVisible = false;
+            YaşamKategori.IsVisible = true;
+            HızlıKategori.IsVisible = false;
         }
 
         private void HızlıKButton_Clicked(object sender, EventArgs e)
         {
-            
+            ErkekKategori.IsVisible = false;
+            KadınKategori.IsVisible = false;
+            ÇocukKategori.IsVisible = false;
+            YaşamKategori.IsVisible = false;
+            HızlıKategori.IsVisible = true;
         }
 
         private void KadınKotButon_Clicked(object sender, EventArgs e)
