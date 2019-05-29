@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:TrendXamarin"
              x:Class="TrendXamarin.MainPage">
     <Grid>
-        <Grid x:Name="Anasayfa" BackgroundColor="White" IsVisible="True">
+        <Grid x:Name="Anasayfa" BackgroundColor="White" IsVisible="False">
             <StackLayout>
                 <ScrollView>
                     <Grid >
@@ -841,6 +841,43 @@
 
             </StackLayout>
 
+        </Grid>
+
+        <Grid x:Name="Ödeme" BackgroundColor="LightGray" IsVisible="True">
+            <ScrollView>
+                <StackLayout>
+                    <Grid HeightRequest="50" BackgroundColor="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  Width="*" />
+                            <ColumnDefinition  Width="5*" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton x:Name="GeriButton11" Source="geri.jpg" Clicked="GeriButton11_Clicked"/>
+                        <Image Source="menuustkisim.jpg" Grid.Column="1"/>
+                    </Grid>
+
+                    <Grid Margin="10,15,10,0" HeightRequest="150" BackgroundColor="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="4*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                    
+
+                        <Label Text="Teslimat Adresi" Grid.Row="0" FontSize="25" TextColor="DarkOrange" Margin="10"/>
+                        <StackLayout Grid.Row="1" BackgroundColor="White">
+                        <Entry x:Name="AdresBox" Text="Adresinizi Giriniz" Focused="AdresBox_Focused" BackgroundColor="LightGray" Margin="5"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="*" />
+                                <ColumnDefinition  Width="4*" />
+                            </Grid.ColumnDefinitions>
+                            <Switch Scale="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="Faturamı Aynı Adrese Gönder" VerticalOptions="Center" HorizontalOptions="Start" Grid.Column="1"/>
+                        </Grid>
+                    
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
         </Grid>
 
     </Grid>

@@ -11,7 +11,7 @@ namespace TrendXamarin
     {
         public MainPage()
         {
-           
+            InitializeComponent();
         }
 
         private void GeriButon_Clicked(object sender, EventArgs e)
@@ -258,6 +258,16 @@ namespace TrendXamarin
         private void FavButon_Clicked(object sender, EventArgs e)
         {
             
+        }
+
+        private void GeriButton11_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdresBox_Focused(object sender, FocusEventArgs e)
+        {
+
         }
     }
 }
