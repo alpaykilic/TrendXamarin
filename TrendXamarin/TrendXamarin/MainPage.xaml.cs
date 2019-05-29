@@ -243,32 +243,60 @@ namespace TrendXamarin
 
         private void KadınKotButon_Clicked(object sender, EventArgs e)
         {
-          
+            Anasayfa.IsVisible = false;
+            KadınElbise.IsVisible = true;
         }
 
         private void ErkekAvvaBut_Clicked(object sender, EventArgs e)
         {
-          
+            Anasayfa.IsVisible = false;
+            ErkekElbise.IsVisible = true;
         }
 
         private void ASayfaBut_Clicked(object sender, EventArgs e)
         {
-           
+            ASayfa.IsVisible = true;
+            Kategori.IsVisible = false;
+            Favori.IsVisible = false;
+            Sepetim.IsVisible = false;
+            Hesabım.IsVisible = false;
         }
 
         private void KatBut_Clicked(object sender, EventArgs e)
         {
-           
+            ASayfa.IsVisible = false;
+            Kategori.IsVisible = true;
+            Favori.IsVisible = false;
+            Sepetim.IsVisible = false;
+            Hesabım.IsVisible = false;
         }
 
         private void FavBut_Clicked(object sender, EventArgs e)
         {
-           
+            ASayfa.IsVisible = false;
+            Kategori.IsVisible = false;
+            Favori.IsVisible = true;
+            Sepetim.IsVisible = false;
+            Hesabım.IsVisible = false;
         }
 
         private void SepetBut_Clicked(object sender, EventArgs e)
         {
-           
+            ASayfa.IsVisible = false;
+            Kategori.IsVisible = false;
+            Favori.IsVisible = false;
+            Sepetim.IsVisible = true;
+            Hesabım.IsVisible = false;
+            if (para == 0)
+            {
+                Sepet.IsVisible = true;
+                DoluSepet.IsVisible = false;
+            }
+            else
+            {
+                DoluSepet.IsVisible = true;
+                Sepet.IsVisible = false;
+            }
         }
 
         private void HesapBut_Clicked(object sender, EventArgs e)

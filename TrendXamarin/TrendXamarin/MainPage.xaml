@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:TrendXamarin"
              x:Class="TrendXamarin.MainPage">
     <Grid>
-        <Grid x:Name="Anasayfa" BackgroundColor="White" IsVisible="False">
+        <Grid x:Name="Anasayfa" BackgroundColor="White" IsVisible="True">
             <StackLayout>
                 <ScrollView>
                     <Grid >
@@ -963,7 +963,7 @@
             </ScrollView>
         </Grid>
 
-        <Grid x:Name="Özet" BackgroundColor="White" IsVisible="True">
+        <Grid x:Name="Özet" BackgroundColor="White" IsVisible="False">
             <StackLayout BackgroundColor="LightGray">
                
                 <Grid HeightRequest="45" BackgroundColor="White">
