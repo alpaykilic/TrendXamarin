@@ -19,50 +19,61 @@ namespace TrendXamarin
             KartNo.MaxLength = 16;
         }
 
+        double para = 0;
+
         private void GeriButon_Clicked(object sender, EventArgs e)
         {
-           
+            KadınElbise.IsVisible = false;
+            Anasayfa.IsVisible = true;
         }
 
         private void GeriButon2_Clicked(object sender, EventArgs e)
         {
-           
-            
+            ErkekElbise.IsVisible = false;
+            Anasayfa.IsVisible = true;
+
         }
 
         private void ErkekButon_Clicked(object sender, EventArgs e)
         {
-          
+            ErkekElbise.IsVisible = true;
+            Anasayfa.IsVisible = false;
         }
 
         private void KadınButon_Clicked(object sender, EventArgs e)
         {
-           
+            KadınElbise.IsVisible = true;
+            Anasayfa.IsVisible = false;
         }
 
         private void GeriButon3_Clicked(object sender, EventArgs e)
         {
-           
+            KadınElbise.IsVisible = true;
+            ÜrünS1.IsVisible = false;
         }
 
         private void Ürün1Buton_Clicked(object sender, EventArgs e)
         {
-           
+            KadınElbise.IsVisible = false;
+            ÜrünS1.IsVisible = true;
         }
 
         private void Ürün2Buton_Clicked(object sender, EventArgs e)
         {
-          
+            KadınElbise.IsVisible = false;
+            ÜrünS2.IsVisible = true;
         }
 
         private void Ürün3Buton_Clicked(object sender, EventArgs e)
         {
-           
+            KadınElbise.IsVisible = false;
+            ÜrünS3.IsVisible = true;
         }
 
         private void Ürün4Buton_Clicked(object sender, EventArgs e)
         {
-            
+            KadınElbise.IsVisible = false;
+            ÜrünS4.IsVisible = true;
         }
 
         private void Ürün5Buton_Clicked(object sender, EventArgs e)
