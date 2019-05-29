@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TrendXamarin"
+             x:Class="TrendXamarin.MainPage">
+    <Grid>
+        <Grid x:Name="Anasayfa" BackgroundColor="White" IsVisible="True">
+            <StackLayout>
+                <ScrollView>
+                    <Grid >
+                        <Grid x:Name="ASayfa" BackgroundColor="White" HeightRequest="700" IsVisible="True">
+                        <StackLayout>
+                            <Grid HeightRequest="60" HorizontalOptions="Start" Margin="0,0,0,10">
+                                <SearchBar></SearchBar>
+                            </Grid>
+                            
+                            <Grid HeightRequest="60" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,0,0,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Button x:Name="KadınKButton" Clicked="KadınKButton_Clicked" Grid.Column="0" Text="KADIN" BackgroundColor="White"/>
+                                <Button x:Name="ErkekKButton" Clicked="ErkekKButton_Clicked" Grid.Column="1" Text="ERKEK" BackgroundColor="White"/>
+                                <Button x:Name="ÇocukKButton" Clicked="ÇocukKButton_Clicked" Grid.Column="2" Text="ÇOCUK" BackgroundColor="White"/>
+                                <Button x:Name="YaşamKButton" Clicked="YaşamKButton_Clicked" Grid.Column="3" Text="YAŞAM" BackgroundColor="White"/>
+                                <Button x:Name="HızlıKButton" Clicked="HızlıKButton_Clicked" Grid.Column="4" Text="HIZLI" BackgroundColor="White"/>
+                            </Grid>
+                            
+                            <Grid>
+                                    <Grid x:Name="KadınKategori">
+                                    <StackLayout>
+                                        <ImageButton x:Name="KadınKotButon" Source="Koton.jpeg" Clicked="KadınKotButon_Clicked"/>
+                                        <ImageButton Source="trendyolmilla.jpg"/>
+                                        <ImageButton Source="Armonika.jpg"/>
+                                        <ImageButton Source="Ola.jpg"/>
+                                    </StackLayout>
+                                </Grid>
+                                    <Grid x:Name="ErkekKategori" IsVisible="False">
+                                        <StackLayout>
+                                            <ImageButton x:Name="ErkekAvvaBut" Clicked="ErkekAvvaBut_Clicked" Source="avva.jpg"/>
+                                            <ImageButton Source="LTB.jpg"/>
+                                            <ImageButton Source="PierreCardin.jpg"/>
+                                            <ImageButton Source="trendyolman.jpg"/>
+                                        </StackLayout>
+                                    </Grid>
+                                    <Grid x:Name="ÇocukKategori" IsVisible="False">
+                                        <StackLayout>
+                                            <ImageButton Source="hummel.jpg"/>
+                                            <ImageButton Source="lcw.jpg"/>
+                                            <ImageButton Source="bg.jpg"/>
+                                            <ImageButton Source="carter.jpg"/>
+                                        </StackLayout>
+                                    </Grid>
+                                    <Grid x:Name="YaşamKategori" IsVisible="False">
+                                        <StackLayout>
+                                            <ImageButton Source="ev1.jpg"/>
+                                            <ImageButton Source="ev2.jpg"/>
+                                            <ImageButton Source="ev3.jpg"/>
+                                            <ImageButton Source="ev4.jpg"/>
+                                        </StackLayout>
+                                    </Grid>
+                                    <Grid x:Name="HızlıKategori" IsVisible="False">
+                                        <StackLayout>
+                                            <ImageButton Source="hizli1.jpg"/>
+                                            <ImageButton Source="hizli2.jpg"/>
+                                            <ImageButton Source="hizli3.jpg"/>
+                                            <ImageButton Source="hizli4.jpg"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                            
+                        </StackLayout>
+                    </Grid>
+                    
+                        <Grid x:Name="Kategori" BackgroundColor="White" HeightRequest="700" IsVisible="False">
+
+                            <StackLayout>
+                                <Grid HeightRequest="50">
+                                    <SearchBar/>
+                                </Grid>
+                                <Grid HeightRequest="650">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0" HeightRequest="650">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+
+                                        </Grid.RowDefinitions>
+                                        <ImageButton x:Name="KategoriKadın" Clicked="KategoriKadın_Clicked" Source="kadin.jpg" BackgroundColor="White"/>
+                                        <ImageButton x:Name="KategoriErkek" Clicked="KategoriErkek_Clicked" Source="erkek.jpg" Grid.Row="1" BackgroundColor="White"/>
+                                        <ImageButton Source="annecocuk.jpg" Grid.Row="2" BackgroundColor="White"/>
+                                        <ImageButton Source="kozmetik.jpg" Grid.Row="3" BackgroundColor="White"/>
+                                        <ImageButton Source="evyasam.jpg" Grid.Row="4" BackgroundColor="White"/>
+                                        <ImageButton Source="elektronik.jpg" Grid.Row="5" BackgroundColor="White"/>
+                                        <ImageButton Source="market.jpg" Grid.Row="6" BackgroundColor="White"/>
+                                        <ImageButton Source="mobilya.jpg" Grid.Row="7" BackgroundColor="White"/>
+                                        <ImageButton Source="saat.jpg" Grid.Row="8" BackgroundColor="White"/>
+                                        <ImageButton Source="ayakkabi.jpg" Grid.Row="9" BackgroundColor="White"/>
+                                    </Grid>
+                                    <Grid x:Name="KadinKat" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="150"/>
+                                            <RowDefinition Height="150"/>
+                                            <RowDefinition Height="150"/>
+                                            <RowDefinition Height="150"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton x:Name="KotonKat" Clicked="KotonKat_Clicked" Source="elbise.jpg" BackgroundColor="White"/>
+                                        <ImageButton Source="tshirt.jpg" Grid.Row="0" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="bluz.jpg" Grid.Row="0" Grid.Column="2" BackgroundColor="White"/>
+                                        <ImageButton Source="jean.jpg" Grid.Row="1" Grid.Column="0" BackgroundColor="White"/>
+                                        <ImageButton Source="abiye.jpg" Grid.Row="1" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="mont.jpg" Grid.Row="1" Grid.Column="2" BackgroundColor="White"/>
+                                        <ImageButton Source="gomlek.jpg" Grid.Row="2" Grid.Column="0" BackgroundColor="White"/>
+                                        <ImageButton Source="sweatshirt.jpg" Grid.Row="2" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="ceket.jpg" Grid.Row="2" Grid.Column="2" BackgroundColor="White"/>
+                                        <ImageButton Source="spor2.jpg" Grid.Row="3" Grid.Column="0" BackgroundColor="White"/>
+                                        <ImageButton Source="terlik.jpg" Grid.Row="3" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="taki.jpg" Grid.Row="3" Grid.Column="2" BackgroundColor="White"/>
+                                    </Grid>
+
+                                    <Grid x:Name="ErkekKat" Grid.Column="1" IsVisible="False">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="150"/>
+                                            <RowDefinition Height="150"/>
+                                            <RowDefinition Height="150"/>
+                                            <RowDefinition Height="150"/>
+                                        </Grid.RowDefinitions>
+                                        <ImageButton x:Name="AvvaKat" Clicked="AvvaKat_Clicked" Source="kazak.jpg" BackgroundColor="White"/>
+                                        <ImageButton Source="gomlek2.jpg" Grid.Row="0" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="jean2.jpg" Grid.Row="0" Grid.Column="2" BackgroundColor="White"/>
+                                        <ImageButton Source="ceket2.jpg" Grid.Row="1" Grid.Column="0" BackgroundColor="White"/>
+                                        <ImageButton Source="mont2.jpg" Grid.Row="1" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="cuzdan.jpg" Grid.Row="1" Grid.Column="2" BackgroundColor="White"/>
+                                        <ImageButton Source="kemer.jpg" Grid.Row="2" Grid.Column="0" BackgroundColor="White"/>
+                                        <ImageButton Source="klasik.jpg" Grid.Row="2" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="bot.jpg" Grid.Row="2" Grid.Column="2" BackgroundColor="White"/>
+                                        <ImageButton Source="bere.jpg" Grid.Row="3" Grid.Column="0" BackgroundColor="White"/>
+                                        <ImageButton Source="esofman2.jpg" Grid.Row="3" Grid.Column="1" BackgroundColor="White"/>
+                                        <ImageButton Source="tshirt2.jpg" Grid.Row="3" Grid.Column="2" BackgroundColor="White"/>
+                                    </Grid>
+
+                                </Grid>
+                            </StackLayout>
+                            
+                        </Grid>
+
+                        <Grid x:Name="Favori" BackgroundColor="White" HeightRequest="600" IsVisible="False">
+                            <StackLayout>
+                                <Image Source="fav1.jpg"/>
+                                <Image Source="fav2.jpg"/>
+                                <Image Source="fav3.jpg"/>
+                                <Image Source="hesapgrid4.jpg"/>
+                            </StackLayout>
+                        </Grid>
+
+                        <Grid x:Name="Sepetim" IsVisible="False">
+                            <Grid x:Name="Sepet" BackgroundColor="White" HeightRequest="600" IsVisible="True">
+                                <StackLayout>
+                                    <Label Text="Sepetim" FontAttributes="Bold" Margin="10,10,0,0" FontSize="20" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="Start"/>
+                                    <ImageButton Source="sepetacik.jpeg" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,100,0,0" HeightRequest="200"/>
+                                    <Label Text="Sepetinizde ürün bulunmamaktadır." VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Button x:Name="SatinBasla" Clicked="SatinBasla_Clicked" Text="Alışverişe Başla" HeightRequest="50" WidthRequest="300" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="DarkOrange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                                </StackLayout>
+                            </Grid>
+
+                            <Grid x:Name="DoluSepet" BackgroundColor="White" HeightRequest="600" IsVisible="False">
+                                <StackLayout>
+                                    <Grid HeightRequest="60">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="Sepetim" FontAttributes="Bold" Margin="10,10,0,0" FontSize="20" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="Start"/>
+                                        <Entry x:Name="İndText" Focused="İndText_Focused" Text="İnd Kodu" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <Button x:Name="İndUygula" Text="Uygula" BackgroundColor="DarkOrange" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2"/>
+                                        <ImageButton Source="cop.jpg" Grid.Column="3" BackgroundColor="White"/>
+
+                                    </Grid>
+
+                                    <Grid HeightRequest="480">
+                                        <ScrollView VerticalScrollBarVisibility="Never">
+                                            <ListView x:Name="ÜrünList">
+                                                
+                                            </ListView>
+                                        </ScrollView>
+                                    </Grid>
+                                    <Grid HeightRequest="50">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="Toplam:" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0"/>
+                                        <Label Text="0 TL" x:Name="ToplamPara" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1"/>
+                                        <Button x:Name="OnaylaBut" Clicked="OnaylaBut_Clicked" Text="Sepeti Onayla" BackgroundColor="DarkOrange" TextColor="White" FontAttributes="Bold" FontSize="15" Margin="0,10,0,0" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" />
+
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                        
+
+                        <Grid x:Name="Hesabım" BackgroundColor="White" HeightRequest="600" IsVisible="False">
+                            <StackLayout>
+                                <Image Source="hesap1.jpg"/>
+                                <Image Source="hesapgrid2.jpg"/>
+                                <Image Source="hesapgrid3.jpg"/>
+                                <Image Source="hesapgrid4.jpg"/>
+                            </StackLayout>
+                        </Grid>
+
+                    </Grid>
+                </ScrollView>
+                <Grid HeightRequest="50" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="ASayfaBut" Clicked="ASayfaBut_Clicked" Grid.Column="0" Source="anasayfa.jpg" BackgroundColor="White"/>
+                    <ImageButton x:Name="KatBut" Clicked="KatBut_Clicked" Grid.Column="1" Source="kategori.jpg" BackgroundColor="White"/>
+                    <ImageButton x:Name="FavBut" Clicked="FavBut_Clicked" Grid.Column="2" Source="favori.jpg" BackgroundColor="White"/>
+                    <ImageButton x:Name="SepetBut" Clicked="SepetBut_Clicked" Grid.Column="3" Source="sepetim.jpg" BackgroundColor="White"/>
+                    <ImageButton x:Name="HesapBut" Clicked="HesapBut_Clicked" Grid.Column="4" Source="hesap.jpg" BackgroundColor="White"/>
+
+                </Grid>
+            </StackLayout>
+            
+        </Grid>
+        
+        <Grid x:Name="KadınElbise" BackgroundColor="White" IsVisible="False" >
+            <ScrollView VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                <StackLayout>
+
+                    <Grid HeightRequest="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="5*" />
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton x:Name="GeriButon" Clicked="GeriButon_Clicked" Source="geri.jpg" Grid.Column="0" BackgroundColor="Transparent" />
+                        <Label Text="Koton - Kadın Giyim" WidthRequest="50" HeightRequest="50" Margin="10" HorizontalTextAlignment="Center" FontSize="Large"  FontAttributes="Bold" TextColor="Black" Grid.Column="1"  />
+                    </Grid>
+                
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Source="siralama.JPG" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"/>
+                        <ImageButton Source="Filtrele.JPG" Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent"/>
+                    </Grid>
+
+                    <Grid>
+                        <StackLayout Margin="5">
+                            <Grid HorizontalOptions="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                </Grid.RowDefinitions>
+
+                                <ImageButton x:Name="Ürün1Buton" BackgroundColor="White" Source="urun1.jpg" Grid.Row="0" Grid.Column="0" Clicked="Ürün1Buton_Clicked" />
+                                <ImageButton x:Name="Ürün2Buton" Clicked="Ürün2Buton_Clicked" BackgroundColor="White" Source="urun2.jpg" Grid.Row="0" Grid.Column="1" />
+                                <ImageButton x:Name="Ürün3Buton" Clicked="Ürün3Buton_Clicked" BackgroundColor="White" Source="urun3.jpg" Grid.Row="1" Grid.Column="0" />
+                                <ImageButton x:Name="Ürün4Buton" Clicked="Ürün4Buton_Clicked" BackgroundColor="White" Source="urun4.jpg" Grid.Row="1" Grid.Column="1" />
+
+
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+        
+        <Grid x:Name="ErkekElbise" BackgroundColor="White" IsVisible="False">
+            <ScrollView VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
+                <StackLayout>
+
+                    <Grid HeightRequest="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="5*" />
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton x:Name="GeriButon2" Clicked="GeriButon2_Clicked" Source="geri.jpg" Grid.Column="0" BackgroundColor="Transparent" />
+                        <Label Text="AVVA - Erkek Giyim" WidthRequest="50" HeightRequest="50" Margin="10" HorizontalTextAlignment="Center" FontSize="Large"  FontAttributes="Bold" TextColor="Black" Grid.Column="1"  />
+                    </Grid>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Source="siralama.JPG" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"/>
+                        <ImageButton Source="Filtrele.JPG" Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent"/>
+                    </Grid>
+
+                    <Grid>
+                        <StackLayout Margin="5">
+                            <Grid HorizontalOptions="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                </Grid.RowDefinitions>
+
+                                <ImageButton x:Name="Ürün5Buton" Clicked="Ürün5Buton_Clicked" BackgroundColor="White" Source="urun5.jpg" Grid.Row="0" Grid.Column="0" />
+                                <ImageButton x:Name="Ürün6Buton" Clicked="Ürün6Buton_Clicked" BackgroundColor="White" Source="urun6.jpg" Grid.Row="0" Grid.Column="1" />
+                                <ImageButton x:Name="Ürün7Buton" Clicked="Ürün7Buton_Clicked" BackgroundColor="White" Source="urun7.jpg" Grid.Row="1" Grid.Column="0" />
+                                <ImageButton x:Name="Ürün8Buton" Clicked="Ürün8Buton_Clicked" BackgroundColor="White" Source="urun8.jpg" Grid.Row="1" Grid.Column="1" />
+
+
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+        
+        <Grid x:Name="ÜrünS1" BackgroundColor="White" IsVisible="False">
+            
+                <StackLayout BackgroundColor="LightGray">
+                    <Grid HeightRequest="60" BackgroundColor="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon3" Clicked="GeriButon3_Clicked" />
+                        <ImageButton x:Name="FavButon" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                    </Grid>
+
+                    <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns1.JPG"/>
+                            <Label HeightRequest="50" BackgroundColor="White" Text="Koton" TextColor="Black"  FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Kadın Lacivert Kimono 7YAL51779JW" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>S</x:String>
+                                        <x:String>M</x:String>
+                                        <x:String>L</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;%100 Viskoz.&#x0a;Numune Bedeni : S/36/1/27-32&#x0a;Ürüne ait perakende satış fiyatı tedarikçi tarafından sağlanmaktadır.         
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                    </Grid>
+
+                    <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                        <Label x:Name="Fiyat1" Text="39.99 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                        <Button x:Name="SipButon1" Clicked="SipButon1_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+                            
+                        </Button>
+                    </Grid>
+
+                </StackLayout>
+            
+        </Grid>
+        
+        <Grid x:Name="ÜrünS2" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon4" Clicked="GeriButon4_Clicked" />
+                    <ImageButton x:Name="FavButon2" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns2.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="Koton" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Kadın Ekru Bisiklet Yaka Kısa Kollu T-Shirt 9YAL18321IK" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker2" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>S</x:String>
+                                        <x:String>M</x:String>
+                                        <x:String>L</x:String>
+                                        <x:String>XL</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;Bu butikte indirim kuponları/kodları geçerli değildir.
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat2" Text="14.99 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon2" Clicked="SipButon2_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid x:Name="ÜrünS3" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon5" Clicked="GeriButon5_Clicked" />
+                    <ImageButton x:Name="FavButon3" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns3.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="Koton" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Kadın Mavi Normal Bel Şort 8YAK01035OW" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker3" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>34</x:String>
+                                        <x:String>36</x:String>
+                                        <x:String>38</x:String>
+                                        <x:String>40</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;%97 Polyester %3 Elastan
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat3" Text="24.99 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon3" Clicked="SipButon3_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid x:Name="ÜrünS4" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon6" Clicked="GeriButon6_Clicked" />
+                    <ImageButton x:Name="FavButon4" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns4.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="Koton" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Kadın Kahve V Yaka Kolsuz Çizgili Midi Elbise 9YAK88131PW" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker4" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>36</x:String>
+                                        <x:String>38</x:String>
+                                        <x:String>40</x:String>
+                                        <x:String>42</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;Bu butikte indirim kuponları/kodları geçerli değildir.
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat4" Text="74.99 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon4" Clicked="SipButon4_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid x:Name="ÜrünS5" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon7" Clicked="GeriButon7_Clicked" />
+                    <ImageButton x:Name="FavButon5" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns5.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="AVVA" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Erkek Lacivert Çiçekli Polo T-Shirt - A81Y1207" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker5" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>S</x:String>
+                                        <x:String>M</x:String>
+                                        <x:String>L</x:String>
+                                        <x:String>XL</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;Bu ürün Trendyol adına AVVA tarafından gönderilecektir.
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat5" Text="49.95 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon5" Clicked="SipButon5_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid x:Name="ÜrünS6" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon8" Clicked="GeriButon8_Clicked" />
+                    <ImageButton x:Name="FavButon6" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns6.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="AVVA" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Erkek Turkuaz Vual Gömlek - A81Y2206" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker6" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>S</x:String>
+                                        <x:String>M</x:String>
+                                        <x:String>L</x:String>
+                                        <x:String>XL</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;Bu ürün Trendyol adına AVVA tarafından gönderilecektir.
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat6" Text="49.95 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon6" Clicked="SipButon6_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid x:Name="ÜrünS7" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon9" Clicked="GeriButon9_Clicked" />
+                    <ImageButton x:Name="FavButon7" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns7.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="AVVA" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Erkek Siyah Kazak - 9KAM91280LT" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker7" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>S</x:String>
+                                        <x:String>M</x:String>
+                                        <x:String>L</x:String>
+                                        <x:String>XL</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;Bu ürün Trendyol adına AVVA tarafından gönderilecektir.
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat7" Text="32.99 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon7" Clicked="SipButon7_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid x:Name="ÜrünS8" BackgroundColor="White" IsVisible="False">
+
+            <StackLayout BackgroundColor="LightGray">
+                <Grid HeightRequest="60" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="geri.JPG" Grid.Column="0" x:Name="GeriButon10" Clicked="GeriButon10_Clicked" />
+                    <ImageButton x:Name="FavButon8" Clicked="FavButon_Clicked" Source="fav.JPG" Grid.Column="2" BackgroundColor="Transparent" />
+
+                </Grid>
+
+                <Grid HeightRequest="550">
+                    <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                        <StackLayout BackgroundColor="LightGray">
+                            <Image Source="uruns8.JPG"/>
+                            <Label HeightRequest="25" BackgroundColor="White" Text="AVVA" TextColor="Black" FontAttributes="Bold" FontSize="Large" Margin="8,0,8,0"/>
+                            <Label HeightRequest="40" BackgroundColor="White" Text="Erkek Mavi Mark Jean Pantolon - 9KAM43205MD" TextColor="Black" Margin="8,-5,8,0"/>
+                            <Label HeightRequest="25" Text="Teslimat: 2-6 Mayıs" TextColor="Black" BackgroundColor="White" Margin="8"/>
+                            <Picker x:Name="picker8" Margin="8"
+                        Title="Beden Seçiniz"
+                        TitleColor="Black">
+
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>29/30</x:String>
+                                        <x:String>30/30</x:String>
+                                        <x:String>30/32</x:String>
+                                        <x:String>31/32</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+
+                            <Label Text="Ürün Bilgileri" Margin="8,0,8,0" FontSize="Large" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Margin="8,0,8,0" HorizontalOptions="Start" BackgroundColor="White">
+                                <Label.Text>
+                                    15 gün içinde ücretsiz iade.&#x0a;24 saatte kargoda fırsatı iş günlerinde geçerlidir.&#x0a;Bu butikte indirim kuponları/kodları geçerli değildir.
+                                </Label.Text>
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+
+                <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Fiyat8" Text="47.99 TL" TextColor="DarkOrange" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" Margin="8,0,0,0" VerticalOptions="Center"/>
+                    <Button x:Name="SipButon8" Clicked="SipButon8_Clicked" HorizontalOptions="End" WidthRequest="200" VerticalOptions="Center" Text="Sepete Ekle" TextColor="White" BackgroundColor="DarkOrange" Margin="5" Grid.Column="1">
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+
+        </Grid>
+
+       
+
+        
+
+    </Grid>
+</ContentPage>
