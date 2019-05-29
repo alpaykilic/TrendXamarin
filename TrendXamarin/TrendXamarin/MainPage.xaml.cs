@@ -350,52 +350,58 @@ namespace TrendXamarin
         {
             Sepetim.IsVisible = false;
             Ödeme.IsVisible = true;
-            TopFiyat.Text = ToplamPara.Text
+            TopFiyat.Text = ToplamPara.Text;
         }
 
         private void FavButon_Clicked(object sender, EventArgs e)
         {
-            
+            DisplayAlert("Uyarı", "Favorilerinize Eklemek İçin Lütfen Giriş Yapınız", "Tamam");
         }
 
         private void GeriButton11_Clicked(object sender, EventArgs e)
         {
-
+            Ödeme.IsVisible = false;
+            Sepetim.IsVisible = true;
         }
 
         private void AdresBox_Focused(object sender, FocusEventArgs e)
         {
-
+            AdresBox.Text = "";
         }
 
         private void KartNo_Focused(object sender, FocusEventArgs e)
         {
-
+            KartNo.Text = "";
         }
 
         private void AyBox_Focused(object sender, FocusEventArgs e)
         {
-
+            AyBox.Text = "";
         }
 
         private void YılBox_Focused(object sender, FocusEventArgs e)
         {
-
+            YılBox.Text = "";
         }
 
         private void CvvBox_Focused(object sender, FocusEventArgs e)
         {
-
+            CvvBox.Text = "";
         }
 
         private void OnayButon_Clicked(object sender, EventArgs e)
         {
-
+            Ödeme.IsVisible = false;
+            Özet.IsVisible = true;
+            ASayfa.IsVisible = true;
+            AdresEntry.Text = AdresBox.Text;
+            TopFiyat2.Text = TopFiyat.Text;
         }
 
         private void DevamButon_Clicked(object sender, EventArgs e)
         {
-
+            Özet.IsVisible = false;
+            Anasayfa.IsVisible = true;
         }
     }
 }
