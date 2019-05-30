@@ -198,7 +198,7 @@
                                         </Grid.ColumnDefinitions>
                                         <Label Text="Sepetim" FontAttributes="Bold" Margin="10,10,0,0" FontSize="20" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="Start"/>
                                         <Entry x:Name="İndText" Focused="İndText_Focused" Text="İnd Kodu" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
-                                        <Button x:Name="İndUygula" Text="Uygula" BackgroundColor="DarkOrange" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2"/>
+                                        <Button x:Name="İndUygula" Text="Uygula" BackgroundColor="DarkOrange" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2" Clicked="İndUygula_Clicked"/>
                                         <ImageButton Source="cop.jpg" Grid.Column="3" BackgroundColor="White"/>
 
                                     </Grid>

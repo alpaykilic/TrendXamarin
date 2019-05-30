@@ -20,7 +20,7 @@ namespace TrendXamarin
         }
 
         double para = 0;
-
+        string indirim = "ind20";
         private void GeriButon_Clicked(object sender, EventArgs e)
         {
             KadınElbise.IsVisible = false;
@@ -104,6 +104,7 @@ namespace TrendXamarin
         {
             para += 39.99;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("","Ürün Sepetinize Eklendi","Tamam");
         }
 
         private void GeriButon4_Clicked(object sender, EventArgs e)
@@ -116,6 +117,7 @@ namespace TrendXamarin
         {
             para += 14.99;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void GeriButon5_Clicked(object sender, EventArgs e)
@@ -128,6 +130,7 @@ namespace TrendXamarin
         {
             para += 24.99;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void GeriButon6_Clicked(object sender, EventArgs e)
@@ -140,6 +143,7 @@ namespace TrendXamarin
         {
             para += 79.99;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void GeriButon7_Clicked(object sender, EventArgs e)
@@ -152,6 +156,7 @@ namespace TrendXamarin
         {
             para += 49.95;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void GeriButon8_Clicked(object sender, EventArgs e)
@@ -164,6 +169,7 @@ namespace TrendXamarin
         {
             para += 49.95;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void GeriButon9_Clicked(object sender, EventArgs e)
@@ -176,6 +182,7 @@ namespace TrendXamarin
         {
             para += 32.99;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void GeriButon10_Clicked(object sender, EventArgs e)
@@ -188,6 +195,7 @@ namespace TrendXamarin
         {
             para += 47.99;
             ToplamPara.Text = para + " TL";
+            DisplayAlert("", "Ürün Sepetinize Eklendi", "Tamam");
         }
 
         private void ÖdButon_Clicked(object sender, EventArgs e)
@@ -402,6 +410,22 @@ namespace TrendXamarin
         {
             Özet.IsVisible = false;
             Anasayfa.IsVisible = true;
+            para = 0;
+            İndUygula.IsVisible = true;
+            İndText.IsVisible = true;
+            İndText.Text = "İnd Kodu";
+        }
+
+        private void İndUygula_Clicked(object sender, EventArgs e)
+        {
+            if(İndText.Text == "ind20")
+            {
+                para = para * 80 / 100;
+                ToplamPara.Text = para + " TL";
+                İndUygula.IsVisible = false;
+                İndText.IsVisible = false;
+                  
+            }
         }
     }
 }
